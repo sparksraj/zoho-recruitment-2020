@@ -1,0 +1,30 @@
+
+
+import java.util.*;
+
+public class nj {
+	public static void main(String[] args) {
+	  	String str = "WELCOME";
+//	    System.out.println(str);
+	    List<Character> list=new ArrayList<>();
+	    for (char ch : str.toCharArray()) { 
+	    	  
+            list.add(ch); 
+        }
+	    int l = list.size()/2;
+	    String str1 = "";
+	    for (int i=0;i<list.size();i++)
+	    {	if (l == list.size())
+	    		l-=list.size();
+	    	if (l !=list.size())
+	    	{
+	    		str1+=list.get(l);
+	    		System.out.print(str1+"\n");
+	    		l++;
+	    	}
+	    	
+	    		
+	    	
+	  }
+}
+}
